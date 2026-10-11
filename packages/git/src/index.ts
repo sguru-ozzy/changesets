@@ -87,7 +87,7 @@ export async function getCommitsThatAddFiles(
               // We want to stop following commits when the file is flagged with either
               // A = added (new file) or C = copied (new file with similar content).
               // https://git-scm.com/docs/git-log#Documentation/git-log.txt---diff-filterACDMRTUXB
-              "--diff-filter=AC",
+              "--diff-filter=A",
               // We want to allow file renames and small word tweaks.
               // https://git-scm.com/docs/git-log#Documentation/git-log.txt---follow
               "--follow",
